@@ -21,7 +21,6 @@
 #include "usb_device.h"
 #include "usbd_core.h"
 #include "usbd_desc.h"
-#include "usbd_cdc_rndis.h"
 #include "usbd_cdc_rndis_if.h"
 
 /* Private variables ---------------------------------------------------------*/

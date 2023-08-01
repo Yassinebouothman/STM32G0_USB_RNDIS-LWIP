@@ -1,12 +1,12 @@
 /**
   ******************************************************************************
-  * @file    usbd_desc_template.h
+  * @file    USB_Device/CDC_RNDIS_Server/USB_Device/App/usbd_desc.h
   * @author  MCD Application Team
-  * @brief   Header for usbd_desc_template.c module
+  * @brief   Header for usbd_desc.c module
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2015 STMicroelectronics.
+  * Copyright (c) 2019 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -17,45 +17,33 @@
   */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __USBD_DESC_TEMPLATE_H
-#define __USBD_DESC_TEMPLATE_H
+#ifndef __USBD_DESC_H
+#define __USBD_DESC_H
 
 /* Includes ------------------------------------------------------------------*/
 #include "usbd_def.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
-#define         DEVICE_ID1          (UID_BASE)
-#define         DEVICE_ID2          (UID_BASE + 0x4U)
-#define         DEVICE_ID3          (UID_BASE + 0x8U)
+#define  USB_SIZ_STRING_SERIAL          0x1A
+//#if defined (_5416)
+//#define USBD_PID                      0x0E64U
+//#elif defined (_5416MIS)
+//#define USBD_PID                      0x1213U
+//#elif defined (_9810)
+//#define USBD_PID                      0x1214U
+//#elif defined (_9816)
+//#define USBD_PID                      0x1215U
+//#else
+//#error "One module ID should be defined"
+//#endif
 
-/*
- * USB Billboard Class USER string desc Defines Template
- * index should start form 0x10 to avoid using the reserved device string desc indexes
- */
-#if (USBD_CLASS_USER_STRING_DESC == 1)
-#define USBD_BB_IF_STRING_INDEX         0x10U
-#define USBD_BB_URL_STRING_INDEX        0x11U
-#define USBD_BB_ALTMODE0_STRING_INDEX   0x12U
-#define USBD_BB_ALTMODE1_STRING_INDEX   0x13U
-/* Add Specific USER string Desc */
-#define USBD_BB_IF_STR_DESC           (uint8_t *)"STM32 BillBoard Interface"
-#define USBD_BB_URL_STR_DESC          (uint8_t *)"www.st.com"
-#define USBD_BB_ALTMODE0_STR_DESC     (uint8_t *)"STM32 Alternate0 Mode"
-#define USBD_BB_ALTMODE1_STR_DESC     (uint8_t *)"STM32 Alternate1 Mode"
-#endif /* USBD_CLASS_USER_STRING_DESC  */
-
-#define  USB_SIZ_STRING_SERIAL       0x1AU
-
-#if (USBD_LPM_ENABLED == 1)
-#define  USB_SIZ_BOS_DESC            0x0CU
-#elif (USBD_CLASS_BOS_ENABLED == 1)
-#define  USB_SIZ_BOS_DESC            0x5DU
-#endif /* USBD_LPM_ENABLED  */
+#define  USBD_PID                       0x5740                     
+#define  USBD_VID                       0x483
 
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
-extern USBD_DescriptorsTypeDef CDC_RNDIS_Desc; /* Replace 'XXX_Desc' with your active USB device class, ex: HID_Desc */
+extern USBD_DescriptorsTypeDef CDC_RNDIS_Desc;
 
-#endif /* __USBD_DESC_TEMPLATE_H*/
+#endif /* __USBD_DESC_H */
 

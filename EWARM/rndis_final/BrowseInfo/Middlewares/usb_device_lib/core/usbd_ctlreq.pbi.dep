@@ -3,6 +3,10 @@ C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\rndis_final\BrowseInfo\Mi
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\rndis\Target\usbd_conf.h \
+  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h \
+  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Core\Inc\stm32g0xx_hal_conf.h \
+  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h \
+  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0b1xx.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\CMSIS\Include\core_cm0plus.h \
@@ -18,10 +22,6 @@ C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\rndis_final\BrowseInfo\Mi
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\CMSIS\Include\mpu_armv7.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h \
-  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h \
-  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Core\Inc\stm32g0xx_hal_conf.h \
-  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h \
-  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stddef.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ysizet.h \

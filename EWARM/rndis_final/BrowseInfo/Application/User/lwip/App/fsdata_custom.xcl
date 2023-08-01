@@ -33,9 +33,11 @@ C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\Third_Part
 -I
 C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\Third_Party\LwIP\system
 -I
+C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\LwIP\Target
+-I
 C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\LwIP\App
 -I
-C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\LwIP\Target
+C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\Third_Party\LwIP\src\apps\http
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -65,9 +67,11 @@ C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\Middlewares\Third_Party\LwIP\sr
 -I
 C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\Middlewares\Third_Party\LwIP\system
 -I
+C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\LwIP\Target
+-I
 C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\LwIP\App
 -I
-C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\LwIP\Target
+C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\Middlewares\Third_Party\LwIP\src\apps\http
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

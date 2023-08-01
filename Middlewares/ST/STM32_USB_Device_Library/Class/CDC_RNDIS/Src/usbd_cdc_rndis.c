@@ -145,9 +145,7 @@ __ALIGN_BEGIN static uint8_t USBD_CDC_RNDIS_DeviceQualifierDesc[USB_LEN_DEV_QUAL
   0x00,
 };
 #endif /* USE_USBD_COMPOSITE */
-static uint8_t MAC_StrDesc[6] = {CDC_RNDIS_MAC_ADDR0, CDC_RNDIS_MAC_ADDR1, CDC_RNDIS_MAC_ADDR2,
-                                 CDC_RNDIS_MAC_ADDR3, CDC_RNDIS_MAC_ADDR4, CDC_RNDIS_MAC_ADDR5
-                                };
+static uint8_t MAC_StrDesc[6] = { RNDIS_HWADDR };
 
 static uint32_t ConnSpeedTab[2] = {CDC_RNDIS_CONNECT_SPEED_UPSTREAM,
                                    CDC_RNDIS_CONNECT_SPEED_DOWNSTREAM

@@ -56,7 +56,6 @@ C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\rndis_final\BrowseInfo\Ap
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC_RNDIS\Inc\usbd_cdc_rndis.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
-  C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\rndis\App\usbd_cdc_rndis_if.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\Third_Party\LwIP\src\include\lwip\netif.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\Middlewares\Third_Party\LwIP\src\include\lwip\opt.h \
   C:\Users\hp\Documents\STM32_PROJECTS\rndis_final\EWARM\..\LwIP\Target\lwipopts.h \

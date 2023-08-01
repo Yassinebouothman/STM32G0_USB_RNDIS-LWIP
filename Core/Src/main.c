@@ -87,10 +87,9 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  //MX_GPIO_Init();
+  MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  USBD_CDC_RNDIS_fops.Init();
-  USBD_CDC_RNDIS_fops.Control();
+  //USBD_CDC_RNDIS_fops.Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,7 +99,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    USBD_CDC_RNDIS_fops.Process(&USBD_Device);
   }
   /* USER CODE END 3 */
 }
@@ -137,7 +135,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-
   /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK

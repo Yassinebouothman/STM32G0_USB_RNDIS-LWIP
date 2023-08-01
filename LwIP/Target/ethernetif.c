@@ -22,6 +22,8 @@
 #include "netif/etharp.h"
 #include "ethernetif.h"
 #include "usbd_cdc_rndis_if.h"
+#include "usbd_desc.h"
+
 #include <string.h>
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,19 +60,26 @@ static void low_level_init(struct netif *netif)
   netif->hwaddr_len = ETH_HWADDR_LEN;
 
   /* Set MAC hardware address */
-  netif->hwaddr[0] =  CDC_RNDIS_MAC_ADDR0;
+  netif->hwaddr[0] =  CDC_RNDIS_MAC_ADDR0;    
   netif->hwaddr[1] =  CDC_RNDIS_MAC_ADDR1;
   netif->hwaddr[2] =  CDC_RNDIS_MAC_ADDR2;
   netif->hwaddr[3] =  CDC_RNDIS_MAC_ADDR3;
   netif->hwaddr[4] =  CDC_RNDIS_MAC_ADDR4;
   netif->hwaddr[5] =  CDC_RNDIS_MAC_ADDR5;
 
-  /* maximum transfer unit */
-  netif->mtu = 1500;
-
-  /* device capabilities */
-  /* don't set NETIF_FLAG_ETHARP if this device is not an ethernet one */
-  netif->flags |= NETIF_FLAG_BROADCAST | NETIF_FLAG_ETHARP;
+//  /* maximum transfer unit */
+//  netif->mtu = 1500;
+//
+//  /* device capabilities */
+//  /* don't set NETIF_FLAG_ETHARP if this device is not an ethernet one */
+//  netif->flags |= NETIF_FLAG_BROADCAST | NETIF_FLAG_ETHARP;
+  
+    netif->mtu = RNDIS_MTU; // maximum transfer unit
+    netif->name[0] = IFNAME0;
+    netif->name[1] = IFNAME1;
+    /* device capabilities */
+    /* don't set NETIF_FLAG_ETHARP if this device is not an rndis one */
+    netif->flags = NETIF_FLAG_BROADCAST | NETIF_FLAG_ETHARP | NETIF_FLAG_UP | NETIF_FLAG_LINK_UP ;
 }
 
 /**

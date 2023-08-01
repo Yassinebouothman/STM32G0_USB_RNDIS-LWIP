@@ -200,7 +200,6 @@ in voltage and temperature.*/
   *        HAL drivers code
   */
 /* #define USE_FULL_ASSERT    1U */
-
 /* Includes ------------------------------------------------------------------*/
 /**
   * @brief Include modules header file

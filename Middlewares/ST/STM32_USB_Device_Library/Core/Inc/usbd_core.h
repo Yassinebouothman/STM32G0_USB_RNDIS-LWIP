@@ -65,7 +65,7 @@ extern "C" {
 /** @defgroup USBD_CORE_Exported_Macros
   * @{
   */
-
+//#define USE_USBD_COMPOSITE
 /**
   * @}
   */

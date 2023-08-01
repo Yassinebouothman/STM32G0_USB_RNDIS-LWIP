@@ -50,6 +50,7 @@
 #include "lwip/snmp.h"
 
 #include <string.h>
+#include "lwipopts.h"
 
 #include "netif/ppp/ppp_opts.h"
 #if PPPOE_SUPPORT
@@ -150,7 +151,7 @@ ethernet_input(struct pbuf *p, struct netif *netif)
       if ((ethhdr->dest.addr[1] == LL_IP4_MULTICAST_ADDR_1) &&
           (ethhdr->dest.addr[2] == LL_IP4_MULTICAST_ADDR_2)) {
         /* mark the pbuf as link-layer multicast */
-        p->flags |= PBUF_FLAG_LLMCAST;
+        p->flags |= PBUF_FLAG_LLMCAST;    
       }
 #endif /* LWIP_IPV4 */
     }

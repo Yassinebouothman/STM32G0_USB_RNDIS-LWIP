@@ -34,7 +34,6 @@ extern "C" {
 #include "usbd_core.h"
 #include "usbd_desc.h"
 #include "usbd_cdc_rndis.h"
-#include "usbd_cdc_rndis_if.h"
 #include "lwip/netif.h"
 /* USER CODE END Includes */
 
